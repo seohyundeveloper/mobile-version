@@ -18,5 +18,5 @@ Git 클론
 git clone https://github.com/rebehayan/advanced-class5.git
 ```
 ## View
- index: https://github.com/seohyundeveloper/mobile-version/filelist.html
+ index: https://seohyundeveloper.github.io/mobile-version/filelist.html
 
