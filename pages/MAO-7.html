@@ -107,5 +107,14 @@
       <li><b>교육담당</b> : 홍길동 02-1234-5678</li>
     </ul>
   </footer>
+  <script>
+    const fixHeight = document.querySelector('.fix-bottom').offsetHeight;
+    const body = document.body;
+
+    if(fixHeight) {
+      body.style.paddingBottom = fixHeight + 'px';  
+    }
+    // console.log(fixHeight)
+  </script>
 </body>
 </html>
