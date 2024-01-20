@@ -414,6 +414,9 @@
   .mt12 {
     margin-top: 1.2rem;
   }
+  .mt16 {
+    margin-top: 1.6rem;
+  }
   .mt24 {
     margin-top: 2.4rem;
   }
@@ -425,6 +428,9 @@
   }
   .mt34 {
     margin-top: 3.4rem;
+  }
+  .mt50 {
+    margin-top: 5rem;
   }
   @layer spaceOther{
     .basic-space {
@@ -1078,6 +1084,13 @@
       line-height: 2.8rem;
       letter-spacing: -0.1rem;
     }
+    &.small {
+      color: var(--gray21);
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.4rem; /* 100% */
+      letter-spacing: -0.05rem;
+    }
   }
   .post-information {
     color: var(--gray21);
@@ -1087,6 +1100,12 @@
   }
   .txt-blue {
     color: var(--blue);
+  }
+  .txt-type1 {
+    color: var(--gray4b);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: -0.05rem;
   }
 }
 
