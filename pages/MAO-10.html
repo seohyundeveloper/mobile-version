@@ -63,7 +63,7 @@
           <th class="vt">주소</th>
           <td>
             <div class="radio-group">
-              <input type="radio" name="rag1" id="ra1_1" class="a11y-hidden radio"><label for="ra1_1">최근배송지</label>
+              <input type="radio" name="rag1" id="ra1_1" class="a11y-hidden radio" checked><label for="ra1_1">최근배송지</label>
               <input type="radio" name="rag1" id="ra1_2" class="a11y-hidden radio"><label for="ra1_2">기본배송지</label>
               <input type="radio" name="rag1" id="ra1_3" class="a11y-hidden radio"><label for="ra1_3">신규배송지</label>
             </div>
@@ -73,19 +73,26 @@
               <input type="text" class="input">
               <input type="text" class="input" placeholder="상세주소를 입력하세요.">
             </div>
-            <input type="checkbox" name="" id="chk1_1" class="a11y-hidden checkbox" checked><label for="chk1_1" class="mt16">기본배송지정보에 반영합니다.</label>
+            <input type="checkbox" name="" id="chk1_1" class="a11y-hidden checkbox" checked><label for="chk1_1" class="mt16 txt-type2">기본배송지정보에 반영합니다.</label>
           </td>
         </tr>
         <tr>
-          <th>요청사항</th>
-          <td></td>
-        </tr>
-        <tr>
-          <th></th>
-          <td></td>
+          <th class="vt">요청사항</th>
+          <td>
+            <select class="select">
+              <option>배송시 요청사항 선택</option>
+            </select>
+            <div class="heading xsmall mt8">부재시 연락가능한 번호나 수령장소 등을 적어주세요 (한글 30자 이내)</div>
+            <input type="checkbox" name="" id="chk1_2" class="a11y-hidden checkbox"><label for="chk1_2" class="mt16 txt-type2">개인정보 수집 및 이용에 동의합니다.</label>
+            <div class="heading xsmall mt16">(목적 :  교재배송 및 취소교재 회수 / 보유기간 : 회원탈퇴 시까지 / 항목 : 이름, 연락처, 주소)</div>
+            <div class="heading xsmall mt16">개인정보 수집 및 이용에 거부하실 수 있으며, 거부하시는 경우 수강신청을 하실 수 없습니다.</div>
+          </td>
         </tr>
       </tbody>
     </table>
+    <div class="align fix-bottom">
+        <button class="btn blue large ico1 fullsize">수강신청</button>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__copy">COPYRIGHT ⓒ 2000 <b>Rebehayan</b> ALL RIGHTS RESERVED.</div>
@@ -101,7 +108,7 @@
     if(fixHeight) {
       body.style.paddingBottom = fixHeight + 'px';  
     }
-    // console.log(fixHeight)
+    console.log(fixHeight)
   </script>
 </body>
 </html>
