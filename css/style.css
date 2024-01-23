@@ -783,6 +783,33 @@
         }
       }
     }
+    .bar-type3 {
+      --gap: 0.4rem;
+      --width: 0.6rem;
+      --height: 1.1rem;
+      --bg: url("../images/ico_bar2.svg");
+
+      display: inline-flex;
+      align-items: center;
+      gap: var(--gap);
+      & li {
+        display: flex;
+        align-items: center;
+        gap: var(--gap);
+        color: var(--gray21);
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        letter-spacing: -0.05rem;
+        + li {
+          &::before {
+            content: "";
+            width: var(--width);
+            height: var(--height);
+            background: var(--bg) no-repeat 0 0 / contain;
+          }
+        }
+      }
+    }
     .disc-list {
       padding-left: 1.5rem;
       & li {
@@ -1024,8 +1051,6 @@
         letter-spacing: -0.05rem;
       }
       & .post-info__left {
-        /* display: flex;
-        gap: 2.4rem; */
         & span {
           position: relative;
           display: inline-block;
